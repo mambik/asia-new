@@ -25,9 +25,9 @@
         </ul>
       </nav>
       <address class="telephone">
-        <a href="tel:+8800703030" class="tel">8800703030</a>
+        <a href="tel:+8800703030" class="telephone__tel">8800703030</a>
       </address>
-      <a href="" class="timework">График работы</a>
+      <a href="#" class="timework">График работы</a>
 
     </header>
 
@@ -40,7 +40,10 @@
       </section>
 
       <section class="hot-tours">
-        <h2>Горящие туры</h2>
+        <div class="tours-title">
+          <h2>Горящие туры</h2>
+          <img src="" alt="картинка огонь" class="title-img">
+        </div>
 
         <div class="tours">
 
@@ -49,10 +52,14 @@
             <h3 class="card__title">Таиланд</h3>
 
             <div class="card__description">
-              <img class="card__icon" src="" alt="иконка1">
-              <div class="card__date">7-12 ночей</div>
-              <img class="card__icon" src="" alt="иконка2">
-              <div class="card__possobility">Завтраки</div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка1">
+                <div class="card__date">7-12 ночей</div>
+              </div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка2">
+                <div class="card__possobility">Завтраки</div>
+              </div>
             </div>
             <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime dignissimos et
               esse consequatur
@@ -65,10 +72,14 @@
             <h3 class="card__title">Таиланд</h3>
 
             <div class="card__description">
-              <img class="card__icon" src="" alt="иконка1">
-              <div class="card__date">7-12 ночей</div>
-              <img class="card__icon" src="" alt="иконка2">
-              <div class="card__possobility">Завтраки</div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка1">
+                <div class="card__date">7-12 ночей</div>
+              </div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка2">
+                <div class="card__possobility">Завтраки</div>
+              </div>
             </div>
             <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime dignissimos et
               esse consequatur
@@ -81,17 +92,21 @@
             <h3 class="card__title">Таиланд</h3>
 
             <div class="card__description">
-              <img class="card__icon" src="" alt="иконка1">
-              <div class="card__date">7-12 ночей</div>
-              <img class="card__icon" src="" alt="иконка2">
-              <div class="card__possobility">Завтраки</div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка1">
+                <div class="card__date">7-12 ночей</div>
+              </div>
+              <div class="card_item">
+                <img class="card__icon" src="" alt="иконка2">
+                <div class="card__possobility">Завтраки</div>
+              </div>
             </div>
             <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime dignissimos et
               esse consequatur
             </p>
             <a class="card__link" href="#">Смотреть</a>
           </div>
-          </div>
+        </div>
 
 
 
@@ -102,28 +117,35 @@
 
         <div class="news-сards">
 
+          <ul class="news-card__list">
+            <li class="news-card__item">
 
-          <div class="news-card">
-            <img class="news-card__image" src="" alt="картинка новости">
-            <p class="news-card__date">Декабрь 2019</p>
-            <h4>Дешевые путевки на новый года</h4>
-            <p class="news-card__text">
-              Проведи новый год в Таиланде
-            </p>
-          </div>
 
-          <div class="news-card">
-            <img class="news-card__image" src="" alt="картинка новости">
-            <p class="news-card__date">Декабрь 2019</p>
-            <h4>Дешевые путевки на новый года</h4>
-            <p class="news-card__text">
-              Проведи новый год в Таиланде
-            </p>
-          </div>
+              <img class="news-card__image" src="" alt="картинка новости">
+              <div class="news_description">
+                <time class="news-card__date">Декабрь 2019</time>
+                <h4>Дешевые путевки на новый года</h4>
+                <p class="news-card__text">
+                  Проведи новый год в Таиланде
+                </p>
+              </div>
+            </li>
+
+            <li class="news-card__item">
+              <img class="news-card__image" src="" alt="картинка новости">
+              <div class="news_description">
+                <time class="news-card__date">Декабрь 2019</time>
+                <h4>Дешевые путевки на новый года</h4>
+                <p class="news-card__text">
+                  Проведи новый год в Таиланде
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
 
         <div class="paginator">
-          <div class="paginator__text">Страница 1 из 7</div>
+          <div class="paginator__text">Страница <span class="paginator__index">1</span>из <span class="paginator__count"> 7 </span></div>
           <nav class="paginator__list">
             <ul>
               <li class="paginator__item"><a class="paginator__link" href="#">1</a></li>
