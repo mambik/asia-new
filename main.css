@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #001821;
+  color: white;
+  line-height: 1, 42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 0px auto;
+  width: 1140px;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  height: 120px;
+  position: relative;
+  margin-bottom: 68px;
+
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 0px;
+
+}
+
+.main-menu {
+  position: absolute;
+  top: 30px;
+  left: 165px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  font-weight: normal;
+}
+
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+.main-menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+.main-menu__item:last-child {
+  margin-right: 0px;
+}
+
+.main-menu__item-active .main-menu__link {
+  color: #F5170E;
+}
+
+.main-menu__link {
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+.main-menu__link:hover {
+  color: red;
+  font-size: 14px;
+}
+
+.telephone {
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  font-style: normal;
+  text-align: right;
+
+}
+
+.telephone__tel {
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+
+.timework {
+  text-decoration: underline;
+  font-size: 13px;
+  margin-top: 0px;
+
+}
+
+.banner {
+  width: 520px;
+  margin-bottom: 245px;
+}
+
+.banner__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 98px;
+  color: #ebebeb;
+  margin-bottom: 25px;
+}
+
+
+.banner__text {
+  font-size: 18px;
+  margin-bottom: 34px;
+
+}
+
+.button {
+
+  border-radius: 35px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+.button--big {
+  padding: 18px 40px;
+
+}
+
+.button--small {
+  padding: 18px 30px;
+
+}
+
+.button--off:hover {
+  background-color: #F5170E;
+  color: white;
+
+}
+
+.button--off {
+  background: #ffffff;
+  color: #F5170E;
+  border: 1px solid #e34761;
+
+}
+
+.button--on {
+  background: #F5170E;
+
+
+
+}
+
+.hot-tours {
+  margin-bottom: 127px;
+}
+
+.hot-tours_name {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 51px;
+  position: relative;
+}
+
+.hot-tours_name::after {
+  content: url(/asia-new/img/flame.png);
+  position: absolute;
+  left: 285px;
+
+
+}
+
+
+
+.card {
+  width: 360px;
+  display: inline-block;
+
+
+}
+
+
+
+.top-tours__item {
+  min-width: 362px;
+  display: inline-block;
+  margin-right: 22px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+
+.top-tours__item:last-child {
+  margin-right: 0px;
+}
+
+
+
+.card__image {
+  min-height: 144px;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.card__description {
+  padding: 26px 23px;
+
+}
+
+
+.card__item,
+.card__text {
+
+  color: #303030;
+}
+
+.card__icon {
+  margin-left: 7px;
+}
+
+.card__item {
+  margin-bottom: 8px;
+}
+
+.card__possobility,
+.card__icon,
+.card__date,
+.card__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card__icon {
+  padding-right: 6px;
+}
+
+.card__date {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__possobility {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.news-сards {
+  margin-bottom: 50px;
+}
+
+.news__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 51px;
+}
+
+.news-card__item {
+  width: 557px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+}
+
+.news-сard__list li:last-child {
+  margin-right: 0px;
+
+}
+
+
+
+.news-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.news_description {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 49px 29px;
+  min-height: 140px;
+
+}
+
+.news-card__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 3px;
+}
+
+.news-card__date {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.news-card__text {
+
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.paginator {
+  text-align: center;
+  font-size: 16px;
+}
+
+.paginator__text,
+.paginator__list,
+.paginator__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+.paginator__count {
+  margin-right: 25px;
+}
+
+.paginator__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+.paginator__item--active .paginator__link,
+.paginator__link:hover {
+  background-color: white;
+  color: #F5170E;
+}
+
+.news {
+  margin-bottom: 245px;
+}
+
+
+.about {
+  margin-left: 615px;
+
+}
+
+
+
+
+.about-us::after {
+  content: url(/asia-new/img/gates.png);
+
+  display: block;
+  width: 490px;
+  height: 505px;
+  position: absolute;
+z-index: -1;
+top: -98px;
+left: -353px;
+
+}
+
+
+
+.about-us {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+
+.about-us__description {
+  position: absolute;
+  left: 50px;
+  right: 0px;
+  bottom: 41px;
+  padding: 49px 29px 40px;
+  min-height: 140px;
+  max-width: 550px;
+
+}
+
+
+.about-us__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000;
+  padding-bottom: 22px;
+}
+
+.about-us__text {
+
+  font-size: 16px;
+  line-height: 27px;
+  color: #060606;
+  padding-bottom: 16px;
+}
+
+
+
+
+
+/*
+  position: absolute;
+}*/
+
+/*
+
+.wrapper {
+  background-image: url(/asia-new/);
+}
+
+<--banner*/
+
+
+
+
+
+
+
+
+/*
+<--paginator-->
+.paginator__text {
+  display: inline-block;
+}
+
+.paginator__list {
+  display: inline-block;
+
+}
+
+.paginator__item {
+  display: inline-block;
+}
+
+<--menu-->
+
+.main-menu {
+
+  display: inline-block;
+  margin-right: 522px;
+
+}
+
+
+.main-menu__list {
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-menu__item {
+  display: inline;
+  padding: 54px;
+}
+
+.main-menu__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+
+
+<--socials-->
+
+.socials {
+  display: inline-block;
+}
+
+
+.socials__item {
+  display: inline-block;
+
+}
+
+
+<--logo-->
+.logo {
+  display: inline-block;
+
+
+  .banner {
+    background-color: salmon;
+    width: 400px;
+
+  }
+
+  .hot-tours {
+    background-color: slateblue;
+    width: 600px;
+  }
+
+
+
+
+}
+
+
+<--telphone-->
+
+.telephone {
+  display: inline-block;
+  background-color: yellow;
+}
+
+.telephone__tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.ring {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 20px;
+  position: relative;
+  right: 109px;
+  top: 20px;
+}
+
+.timework {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+  right: 100px;
+  top: 20px;
+  background-color: violet;
+
+}
+
+
+<--tours-->
+
+
+.hot-tours {
+  padding-top: 50px;
+
+}
+
+.card {
+  display: inline-block;
+  width: 362px;
+  height: 450px;
+  vertical-align: top;
+
+}
+
+.title-img {
+  display: inline-block;
+}
+
+.hot-tours_name {
+  display: inline-block;
+
+}
+
+.card__date {
+  display: inline-block;
+}
+
+.card__possobility {
+  display: inline-block;
+}
+
+.card__icon {
+  display: inline-block;
+}
+
+.card__text {
+  display: inline-block;
+
+
+}
+
+.card__item {
+  display: inline-block;
+
+}
+
+
+
+
+<--news-->
+
+.news {
+  padding-top: 50px;
+  margin-bottom: 100px;
+
+}
+
+.news-card__item {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+<--foto-->
+.foto__img {
+  display: inline-block;
+
+}
+
+.foto {
+  display: inline-block;
+  background-color: tomato;
+  margin-left: 389px;
+  position: absolute;
+  top: -100px;
+  right: 450px;
+  z-index: 0;
+  width: 490px;
+  height: 505px;
+
+
+}
+
+
+<--about-us-->
+
+
+.about-us {
+  display: inline-block;
+  width: 755px;
+  height: 455px;
+  margin-left: 743px;
+  position: relative;
+  z-index: 11;
+
+}
+
+.about-us__img {}*/
