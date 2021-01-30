@@ -10,6 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-page-wrapper {
+
+  background: url(/asia-new/1.jpg) center top no-repeat, url(/asia-new/2.png) center bottom 190px no-repeat;
+}
+
 .container {
   margin: 0px auto;
   width: 1140px;
@@ -303,9 +308,13 @@ h4 {
   overflow: hidden;
   position: relative;
   margin-right: 10px;
+  
 }
 
-.news-сard__list li:last-child {
+
+
+
+.news-сard__item:last-child {
   margin-right: 0px;
 
 }
@@ -407,9 +416,9 @@ h4 {
   width: 490px;
   height: 505px;
   position: absolute;
-z-index: -1;
-top: -98px;
-left: -353px;
+  z-index: 2;
+  top: -98px;
+  left: -353px;
 
 }
 
@@ -452,242 +461,75 @@ left: -353px;
   padding-bottom: 16px;
 }
 
-
-
-
-
-/*
-  position: absolute;
-}*/
-
-/*
-
-.wrapper {
-  background-image: url(/asia-new/);
+.content {
+  margin-bottom: 50px;
 }
 
-<--banner*/
-
-
-
-
-
-
-
-
-/*
-<--paginator-->
-.paginator__text {
-  display: inline-block;
+.footer-container__content {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  
+  
 }
 
-.paginator__list {
-  display: inline-block;
-
+.footer {
+  height: 146px;
+  position: relative;
+  margin-top: 23px;
 }
-
-.paginator__item {
-  display: inline-block;
-}
-
-<--menu-->
-
-.main-menu {
-
-  display: inline-block;
-  margin-right: 522px;
-
-}
-
-
-.main-menu__list {
-  margin: 10px;
-  padding: 10px;
-}
-
-.main-menu__item {
-  display: inline;
-  padding: 54px;
-}
-
-.main-menu__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-
-
-<--socials-->
 
 .socials {
-  display: inline-block;
+  top: 28px;
+  right: 255px;
+  position: absolute;
 }
-
 
 .socials__item {
   display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.socials__item:last-child {
+  margin-right: 0px;
+}
+
+.socials__link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  background: center center no-repeat;
 
 }
 
 
-<--logo-->
-.logo {
-  display: inline-block;
-
-
-  .banner {
-    background-color: salmon;
-    width: 400px;
-
-  }
-
-  .hot-tours {
-    background-color: slateblue;
-    width: 600px;
-  }
-
-
-
-
-}
-
-
-<--telphone-->
-
-.telephone {
-  display: inline-block;
-  background-color: yellow;
-}
-
-.telephone__tel {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 20px;
-}
-
-.ring {
-  font-style: normal;
-  font-weight: normal;
+.telephone__desc {
   font-size: 11px;
   line-height: 20px;
-  position: relative;
-  right: 109px;
-  top: 20px;
-}
-
-.timework {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  position: relative;
-  right: 100px;
-  top: 20px;
-  background-color: violet;
-
+  color: #9A9A9A;
 }
 
 
-<--tours-->
-
-
-.hot-tours {
-  padding-top: 50px;
-
+.socials__item--tg .socials__link {
+  background-image: url(/asia-new/img/telegram.png);
+  
 }
 
-.card {
-  display: inline-block;
-  width: 362px;
-  height: 450px;
-  vertical-align: top;
+.socials__item--vk .socials__link {
 
-}
-
-.title-img {
-  display: inline-block;
-}
-
-.hot-tours_name {
-  display: inline-block;
-
-}
-
-.card__date {
-  display: inline-block;
-}
-
-.card__possobility {
-  display: inline-block;
-}
-
-.card__icon {
-  display: inline-block;
-}
-
-.card__text {
-  display: inline-block;
-
-
-}
-
-.card__item {
-  display: inline-block;
-
+  background-image: url(/asia-new/img/vk.png);
 }
 
 
+.socials__item--fb .socials__link {
 
-
-<--news-->
-
-.news {
-  padding-top: 50px;
-  margin-bottom: 100px;
-
-}
-
-.news-card__item {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
-}
-
-<--foto-->
-.foto__img {
-  display: inline-block;
-
-}
-
-.foto {
-  display: inline-block;
-  background-color: tomato;
-  margin-left: 389px;
-  position: absolute;
-  top: -100px;
-  right: 450px;
-  z-index: 0;
-  width: 490px;
-  height: 505px;
-
-
+  background-image: url(/asia-new/img/f.png);
 }
 
 
-<--about-us-->
+.socials__item--inst .socials__link {
 
-
-.about-us {
-  display: inline-block;
-  width: 755px;
-  height: 455px;
-  margin-left: 743px;
-  position: relative;
-  z-index: 11;
-
+  background-image: url(/asia-new/img/in.png);
 }
 
-.about-us__img {}*/
+
