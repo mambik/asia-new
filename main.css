@@ -13,6 +13,7 @@ body {
 .main-page-wrapper {
 
   background: url(/asia-new/1.jpg) center top no-repeat, url(/asia-new/2.png) center bottom 190px no-repeat;
+  z-index: -1;
 }
 
 .container {
@@ -416,7 +417,7 @@ h4 {
   width: 490px;
   height: 505px;
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   top: -98px;
   left: -353px;
 
@@ -430,6 +431,7 @@ h4 {
   height: 100%;
   object-fit: cover;
   position: relative;
+  z-index: 5;
 }
 
 
