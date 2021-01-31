@@ -14,11 +14,12 @@ body {
 
   background: url(/asia-new/1.jpg) center top no-repeat, url(/asia-new/2.png) center bottom 190px no-repeat;
   z-index: -1;
+  overflow: hidden;
 }
 
 .container {
   margin: 0px auto;
-  width: 1140px;
+  width: 1141px;
 }
 
 a {
@@ -524,10 +525,25 @@ h4 {
   
 }
 
+
+.socials__item--tg .socials__link:hover {
+  background-image: url(/asia-new//img/t2.png);
+  
+}
+
+
 .socials__item--vk .socials__link {
 
   background-image: url(/asia-new/img/vk.png);
 }
+
+
+.socials__item--vk .socials__link:hover {
+
+  background-image: url(/asia-new/img/vk2.png);
+}
+
+
 
 
 .socials__item--fb .socials__link {
@@ -536,9 +552,21 @@ h4 {
 }
 
 
+.socials__item--fb .socials__link:hover {
+
+  background-image: url(/asia-new/img/f2.png);
+}
+
+
+
 .socials__item--inst .socials__link {
 
   background-image: url(/asia-new/img/in.png);
 }
 
+
+.socials__item--inst .socials__link:hover {
+
+  background-image: url(/asia-new/img/in2.png);
+}
 
