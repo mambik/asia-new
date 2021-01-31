@@ -97,7 +97,7 @@ h4 {
 
 .telephone {
   position: absolute;
-  top: 18px;
+  top: 20px;
   right: 0px;
   font-style: normal;
   text-align: right;
@@ -110,10 +110,17 @@ h4 {
   margin-bottom: 0px;
 }
 
+.telephone__tel--min {
+  line-height: ;
+  
+
+}
+
 .timework {
   text-decoration: underline;
   font-size: 13px;
   margin-top: 0px;
+  line-height: 1em;
 
 }
 
@@ -308,14 +315,14 @@ h4 {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
   
 }
 
 
 
 
-.news-сard__item:last-child {
+.news-card__item:last-child {
   margin-right: 0px;
 
 }
@@ -411,8 +418,8 @@ h4 {
 
 
 .about-us::after {
-  content: url(/asia-new/img/gates.png);
-
+  content: "";
+  background-image: url(/asia-new/img/gates.png);
   display: block;
   width: 490px;
   height: 505px;
