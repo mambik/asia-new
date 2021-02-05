@@ -3,32 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
   <title>Air Asia</title>
+  <link rel="stylesheet" href="/asia-new/normalize.css">
   <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body>
   <div class="wrapper main-page-wrapper">
+
+
     <div class="container">
-      <header class="header">
-        <a href="#" class="logo">
-          <img src="/asia-new/img/logo.png" alt="" class="logo__image">
-        </a>
+      <header class="header header-line">
+        <div class="header__col">
+          <a href="#" class="logo">
+            <img src="/asia-new/img/logo.png" alt="" class="logo__image">
+          </a>
 
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item main-menu__item-active"><a class="main-menu__link" href="#">Главная</a></li>
-            <li class="main-menu__item "><a class="main-menu__link" href="#">Услуги</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
-          </ul>
-        </nav>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item main-menu__item-active"><a class="main-menu__link" href="#">Главная</a></li>
+              <li class="main-menu__item "><a class="main-menu__link" href="#">Услуги</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+            </ul>
+          </nav>
+        </div>
 
-        <address class="telephone">
-          <a href="tel:+8800703030" class="telephone__tel telephone__tel--min">8 800 700 30 30</a>
-          <div class="timework time--small">График работы</div>
-        </address>
+        <div class="header__col header__col--align-right">
+          <address class="telephone">
+            <a href="tel:+8800703030" class="telephone__tel telephone__tel--min">8 800 700 30 30</a>
+            <div class="timework time--small">График работы</div>
+          </address>
+
+        </div>
+
+
 
 
       </header>
@@ -38,29 +48,34 @@
       <div class="container">
 
         <section class="banner">
+
+
+          
           <h1 class="banner__title">Авторские туры по Азии</h1>
           <p class="banner__text">Открой для себя Азию</p>
           <a class="banner__link button button--on button--big" href="#">Подробнее</a>
 
         </section>
 
+
         <section class="hot-tours">
 
           <div class="tours-title">
-            <h2 class="hot-tours_name">Горящие туры</h2>
+            <h2 class="section-title hot-tours_name">Горящие туры</h2>
 
           </div>
 
           <div class="tours">
 
             <ul class="top-tours">
-              <li class="top-tours__item">
-                <div class="card">
+              <li class="top-tours__item card">
+                <div class="card__img">
                   <img class="card__image" src="/asia-new/img/river.png" alt="Картинка Таиланд">
 
 
                   <div class="card__description">
                     <h3 class="card__title">Таиланд</h3>
+                    <div class="card__items">
                     <div class="card__item">
                       <img class="card__icon" src="/asia-new/img/calendar.png" alt="иконка1">
                       <div class="card__date">7- 12 ночей</div>
@@ -69,6 +84,7 @@
                       <img class="card__icon" src="/asia-new/img/meal.png" alt="иконка2">
                       <div class="card__possobility">Завтраки</div>
                     </div>
+                  </div>
                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime
                       dignissimos et
                       ipisicing elit. Non, maxime dignissimos
@@ -77,13 +93,14 @@
                   </div>
                 </div>
               </li>
-              <li class="top-tours__item">
-                <div class="card">
+              <li class="top-tours__item card">
+                <div class="card__img">
                   <img class="card__image" src="/asia-new/img/pool.png" alt="Картинка Таиланд">
 
 
                   <div class="card__description">
                     <h3 class="card__title">Бали</h3>
+                    <div class="card__items">
                     <div class="card__item">
                       <img class="card__icon" src="/asia-new/img/calendar.png" alt="иконка1">
                       <div class="card__date">7- 12 ночей</div>
@@ -92,6 +109,7 @@
                       <img class="card__icon" src="/asia-new/img/meal.png" alt="иконка2">
                       <div class="card__possobility">Завтраки</div>
                     </div>
+                  </div>
 
                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime
                       dignissimos et
@@ -101,13 +119,14 @@
                   </div>
                 </div>
               </li>
-              <li class="top-tours__item">
-                <div class="card">
+              <li class="top-tours__item card">
+                <div class="card__img">
                   <img class="card__image" src="/asia-new/img/ocean.png" alt="Картинка Таиланд">
 
 
                   <div class="card__description">
                     <h3 class="card__title">Индонезия</h3>
+                    <div class="card__items">
                     <div class="card__item">
                       <img class="card__icon" src="/asia-new/img/calendar.png" alt="иконка1">
                       <div class="card__date">7- 12 ночей</div>
@@ -116,6 +135,7 @@
                       <img class="card__icon" src="/asia-new/img/meal.png" alt="иконка2">
                       <div class="card__possobility">Завтраки</div>
                     </div>
+                  </div>
 
                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime
                       dignissimos et
@@ -130,45 +150,48 @@
 
         </section>
       </div>
-        
+
 
 
       <section class="news">
         <div class="container">
-          <h2 class="news__title">Новости и акции</h2>
+          <h2 class="section-title news__title">Новости и акции</h2>
 
           <div class="news-сards">
 
             <ul class="news-card__list">
-              <li class="news-card__item">
-                <img class="news-card__image" src="/asia-new/img/plain.png" alt="картинка новости">
-                <div class="news_description">
-                  <div class="news-card__date">Декабрь 2019</div>
-                  <h4 class="news-card__title">Дешевые путевки на новый года</h4>
-                  <p class="news-card__text">
+              <li class="news-card__item single-news">
+                <img class="single-news__image" src="/asia-new/img/plain.png" alt="картинка новости">
+                <div class="single-news_description">
+                  <div class="single-news__date">Декабрь 2019</div>
+                  <h4 class="single-news__title">Дешевые путевки на новый года</h4>
+                  <p class="single-news__text">
                     Проведи новый год в Таиланде
                   </p>
                 </div>
               </li>
 
-              <li class="news-card__item">
-                <img class="news-card__image" src="/asia-new/img/Surfer.png" alt="картинка новости">
-                <div class="news_description">
-                  <div class="news-card__date">Декабрь 2019</div>
-                  <h4 class="news-card__title">Акция для серфингистов</h4>
-                  <p class="news-card__text">
+              <li class="news-card__item single-news">
+                <img class="single-news__image" src="/asia-new/img/Surfer.png" alt="картинка новости">
+                <div class="single-news_description">
+                  <div class="single-news__date">Декабрь 2019</div>
+                  <h4 class="single-news__title">Дешевые путевки на новый года</h4>
+                  <p class="single-news__text">
                     Проведи новый год в Таиланде
                   </p>
                 </div>
               </li>
+              
+              
             </ul>
           </div>
 
           <div class="paginator">
             <div class="paginator__text">Страница <span class="paginator__index">1</span> из <span
-                class="paginator__count"> 7 </span></div>
+                class="paginator__count">
+                7 </span></div>
             <nav class="paginator__list">
-              <ul>
+              <ul class="paginator__items" >
                 <li class="paginator__item paginator__item--active"><a class="paginator__link" href="#">1</a></li>
                 <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
                 <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
@@ -185,11 +208,11 @@
 
 
       <div class="about">
-        <div class="container">
+        <div class="container about__container">
           <div class="about-us">
-            <img src="/asia-new/img/mountains.png" alt="Фото о нас" class="about-us__img">
+
             <div class="about-us__description">
-              <h4 class="about-us__title">О нас</h4>
+              <h4 class="section-title about-us__title">О нас</h4>
               <div class="about-us__text">
                 <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
                   абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
@@ -203,14 +226,17 @@
       </div>
     </main>
 
+
     <footer class="footer-container">
       <div class="container footer-container__content">
 
+
         <div class="footer">
+          <div class="footer__col">
           <a href="#" class="logo">
             <img src="/asia-new/img/logo.png" alt="" class="logo__image">
           </a>
-  
+
           <nav class="main-menu">
             <ul class="main-menu__list">
               <li class="main-menu__item "><a class="main-menu__link" href="#">Главная</a></li>
@@ -219,49 +245,52 @@
             </ul>
           </nav>
 
+          
+        </div>
+
+        <div class="footer__col footer__col--align-right">
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item socials__item--tg">
                 <a href="#" class="socials__link">
-                  
+
                 </a>
 
               </li>
               <li class="socials__item socials__item--vk">
                 <a href="#" class="socials__link">
-                 
+
                 </a>
               </li>
 
               <li class="socials__item socials__item--fb">
                 <a href="#" class="socials__link">
-                 
+
                 </a>
 
               </li>
 
               <li class="socials__item socials__item--inst">
                 <a href="#" class="socials__link">
-                 
+
                 </a>
 
               </li>
 
             </ul>
           </div>
-  
           <address class="telephone">
             <div class="telephone__desc">Бесплатный звонок по России</div>
             <a href="tel:+8800703030" class="telephone__tel">8 800 700 30 30</a>
-            
+
           </address>
-  
-        
 
-          
+        </div>
 
-  
-         
+
+
+
+
         </div>
       </div>
     </footer>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
+html,
+body {
+  height: 100%;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -8,15 +12,30 @@ body {
   line-height: 1, 42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 0px;
+   margin-top: 0px;
 }
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+}
+
+
 
 .main-page-wrapper {
 
-  background: url(/asia-new/1.jpg) center top no-repeat, url(/asia-new/2.png) center bottom 190px no-repeat;
+  background: url(/asia-new/1.jpg) right top no-repeat, url(/asia-new/2.png) center bottom 190px no-repeat;
   z-index: -1;
   overflow: hidden;
 }
+
+
+
+
 
 .container {
   margin: 0px auto;
@@ -28,25 +47,35 @@ a {
 }
 
 .header {
-  height: 120px;
-  position: relative;
-  margin-bottom: 68px;
+  padding-top: 20px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+
+}
+
+.header-line {
+  margin-bottom: 130px;
+
+}
+
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+
+.header__col--align-right {
+  justify-content: flex-end;
 }
 
 .logo {
-  display: block;
-  position: absolute;
-  top: 21px;
-  left: 0px;
-
+  margin-right: 79px;
 }
 
-.main-menu {
-  position: absolute;
-  top: 30px;
-  left: 165px;
-}
 
 ul {
   padding: 0;
@@ -71,6 +100,8 @@ h4 {
   box-sizing: border-box;
 
 }
+
+
 
 .main-menu__item {
   display: inline-block;
@@ -98,11 +129,10 @@ h4 {
 }
 
 .telephone {
-  position: absolute;
-  top: 20px;
-  right: 0px;
+
   font-style: normal;
   text-align: right;
+
 
 }
 
@@ -113,8 +143,8 @@ h4 {
 }
 
 .telephone__tel--min {
-  line-height: ;
-  
+  line-height: 15px;
+
 
 }
 
@@ -126,10 +156,19 @@ h4 {
 
 }
 
+
+
+
+
 .banner {
-  width: 520px;
+  width: 50%;
   margin-bottom: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+
 
 .banner__title {
   font-style: normal;
@@ -194,10 +233,15 @@ h4 {
   margin-bottom: 127px;
 }
 
-.hot-tours_name {
+.section-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 49px;
+
+}
+
+.hot-tours_name {
+
   margin-bottom: 51px;
   position: relative;
 }
@@ -214,19 +258,25 @@ h4 {
 
 .card {
   width: 360px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
 
 }
 
-
+.top-tours {
+  display: flex;
+  justify-content: space-between;
+}
 
 .top-tours__item {
   min-width: 362px;
-  display: inline-block;
-  margin-right: 22px;
+ overflow: hidden;
+ width: calc(100% / 3 - 18px);
+  
   background-color: #ffffff;
   border-radius: 5px;
+  vertical-align: top;
 }
 
 
@@ -251,8 +301,18 @@ h4 {
 }
 
 .card__description {
-  padding: 26px 23px;
+  padding: 33px 35px 26px 15px;
 
+}
+
+.card__item {
+  display: flex;
+  justify-content: sp;
+}
+
+.card__items {
+  display: flex;
+justify-content: space-between;
 }
 
 
@@ -274,8 +334,7 @@ h4 {
 .card__icon,
 .card__date,
 .card__item {
-  display: inline-block;
-  vertical-align: middle;
+ 
 }
 
 .card__icon {
@@ -304,24 +363,34 @@ h4 {
 }
 
 .news__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 49px;
+
   margin-bottom: 51px;
 }
 
+
+.news-card__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .news-card__item {
-  width: 557px;
-  display: inline-block;
+  
+  
   vertical-align: top;
+  margin-right: 2%;
+  flex: 1;
+
+  
+
+}
+
+.single-news {
+
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  margin-right: 20px;
-  
+
 }
-
-
 
 
 .news-card__item:last-child {
@@ -331,7 +400,7 @@ h4 {
 
 
 
-.news-card__image {
+.single-news__image {
   display: block;
   width: 100%;
   height: 100%;
@@ -339,30 +408,30 @@ h4 {
 }
 
 
-.news_description {
+.single-news_description {
   position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px;
   padding: 49px 29px;
-  min-height: 140px;
+  min-height: 40px;
 
 }
 
-.news-card__title {
+.single-news__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 3px;
 }
 
-.news-card__date {
+.single-news__date {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 12px;
 }
 
-.news-card__text {
+.single-news__text {
 
   margin: 0px;
   font-size: 16px;
@@ -373,13 +442,20 @@ h4 {
 .paginator {
   text-align: center;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.paginator__text,
-.paginator__list,
+
+.paginator__items {
+  display: flex;
+  align-items: center;
+}
+
 .paginator__item {
-  display: inline-block;
-  vertical-align: middle;
+
+  align-items: center;
 }
 
 
@@ -407,61 +483,68 @@ h4 {
 }
 
 .news {
-  margin-bottom: 245px;
+  margin-bottom: 120px;
 }
 
 
 .about {
-  margin-left: 615px;
+  margin-left: 570px;
+  
 
+
+}
+
+.about__container{
+display: flex;
 }
 
 
 
 
-.about-us::after {
+.about__container::before {
   content: "";
   background-image: url(/asia-new/img/gates.png);
-  display: block;
+  
   width: 490px;
   height: 505px;
-  position: absolute;
-  z-index: -1;
-  top: -98px;
-  left: -353px;
+  margin-left: -364px;
+  display: block;
+ 
+
 
 }
 
 
 
 .about-us {
-  display: block;
-  width: 100%;
-  height: 100%;
+  
+  max-width: 785px;
   object-fit: cover;
-  position: relative;
-  z-index: 5;
+  z-index: 4;
+  color: #000;
+  background: url(/asia-new/img/mountains.png);
+  padding: 70px 202px 68px 81px;
+  margin-left: -141px;
+margin-top: 170px;
+
+
 }
 
 
 .about-us__description {
-  position: absolute;
-  left: 50px;
-  right: 0px;
-  bottom: 41px;
-  padding: 49px 29px 40px;
-  min-height: 140px;
+
+
+
+
   max-width: 550px;
 
 }
 
 
 .about-us__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 49px;
-  color: #000;
-  padding-bottom: 22px;
+
+  color: currentColor;
+  margin-bottom: 22px;
 }
 
 .about-us__text {
@@ -476,22 +559,41 @@ h4 {
   margin-bottom: 50px;
 }
 
+
+.footer-container {
+  margin-top: auto;
+}
+
 .footer-container__content {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  
-  
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+
 }
 
 .footer {
-  height: 146px;
-  position: relative;
-  margin-top: 23px;
+  padding-top: 20px;
+  margin-bottom: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+
+ 
+}
+
+.footer__col--align-right {
+  align-items: flex-end;
+
 }
 
 .socials {
-  top: 28px;
-  right: 255px;
-  position: absolute;
+  margin-right: 74px;
 }
 
 .socials__item {
@@ -523,13 +625,13 @@ h4 {
 
 .socials__item--tg .socials__link {
   background-image: url(/asia-new/img/telegram.png);
-  
+
 }
 
 
 .socials__item--tg .socials__link:hover {
   background-image: url(/asia-new//img/t2.png);
-  
+
 }
 
 
@@ -571,3 +673,86 @@ h4 {
   background-image: url(/asia-new/img/in2.png);
 }
 
+
+
+
+/*services page*/
+
+
+.top-line {
+  min-height: 412px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 37px;
+  background: url(/asia-new/img/headline\ 1.png) center top no-repeat;
+}
+
+.top-line__header {
+  
+
+}
+
+
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-title {
+font-size: 72px;
+line-height: 1;
+font-weight: bold;
+margin-bottom: 13px;
+
+}
+
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__link {
+  font-size: 14px;
+  color: #9A9A9A;
+  
+}
+
+
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  margin-right: 2px;
+
+}
+
+.breadcrumb__item--active .breadcrumb__link {
+  font-weight: bold;
+}
+
+.breadcrumb__item::after {
+  content: "/";
+  color: #9A9A9A;
+  margin-right: 2px;
+}
+
+
+.breadcrumb__item:last-child:after {
+  display: none;
+ 
+  
+}
+
+
+.page-content {
+  background: #F2F2F2;
+  color: #303030;
+
+}
+
+.service {
+  display: flex;
+}
