@@ -708,7 +708,7 @@ img {
   min-height: 412px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 37px;
+  padding-bottom: 33px;
   background: url(/asia-new/img/headline\ 1.png) center top no-repeat;
 }
 
@@ -777,11 +777,11 @@ img {
 }
 
 .services {
-  margin-bottom: 69px;
+  margin-bottom: 67px;
 }
 
 .services__item {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .services__item:last-child {
@@ -797,38 +797,39 @@ img {
 
 
 .service__image {
-  width: 30%;
-  margin-right: 7%;
+  width: 40%;
+  margin-right: 5%;
 }
 
 .service__description {
   flex: 1;
+  padding-top: 16px;
 }
 
 .service__title {
   font-weight: bold;
   font-size: 36px;
   color: #000000;
-  margin-bottom: 22px;
+  margin-bottom: 37px;
 }
 
 p .service__description {
   color: #303030;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 40px;
 
 
 }
 
 .service__text {
-  margin-bottom: 34px;
+  margin-bottom:75px;
 }
 
 
 .inner-section {
   background: white;
   color: #000000;
-  padding: 88px 0px;
+  padding: 73px 0px 76px;
 
 }
 
@@ -840,7 +841,7 @@ p .service__description {
   font-weight: bold;
   font-size: 48px;
   line-height: 65px;
-  margin-bottom: 68px;
+  margin-bottom: 57px;
 }
 
 .partners {
@@ -852,8 +853,8 @@ p .service__description {
 .patners__link {
   text-decoration: none;
   display: flex;
-  width: 250px;
-  height: 100px;
+  width: 225px;
+  height: 125px;
   align-items: center;
   justify-content: center;
 
@@ -861,7 +862,7 @@ p .service__description {
 
 
 .partners__item {
-  margin-left: 25px;
+  margin-left: 62px;
 }
 
 .partners__item:nth-child(4n +1) {
@@ -869,5 +870,5 @@ p .service__description {
 }
 
 .inner-footer__container {
-  padding-top: 30px;
+  padding-top: 47px;
   padding-bottom: 30px;
