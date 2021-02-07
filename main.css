@@ -147,9 +147,7 @@ img {
   margin-bottom: 0px;
 }
 
-.telephone__tel--min {
-
-}
+.telephone__tel--min {}
 
 .timework {
   text-decoration: underline;
@@ -451,8 +449,8 @@ img {
 
 .paginator--theme-light .paginator__link:hover {
 
-    background-color: #F5170E;
-    color:white;
+  background-color: #F5170E;
+  color: white;
 
 
 }
@@ -461,7 +459,7 @@ img {
 .paginator--theme-light .paginator__item--active .paginator__link {
 
   background-color: #F5170E;
-  color:white;
+  color: white;
 
 
 }
@@ -592,7 +590,7 @@ img {
 }
 
 .footer {
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -794,7 +792,7 @@ img {
 
 .service {
   display: flex;
-  
+
 }
 
 
@@ -830,19 +828,19 @@ p .service__description {
 .inner-section {
   background: white;
   color: #000000;
-  padding: 88px 0px ;
+  padding: 88px 0px;
 
 }
 
-.inner-section--theme-grey{
-background: #F4F5F5;
+.inner-section--theme-grey {
+  background: #F4F5F5;
 }
 
 .inner-section__title {
   font-weight: bold;
-font-size: 48px;
-line-height: 65px;
-margin-bottom: 95px;
+  font-size: 48px;
+  line-height: 65px;
+  margin-bottom: 68px;
 }
 
 .partners {
