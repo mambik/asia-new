@@ -34,6 +34,9 @@ body {
 }
 
 
+.hello-page-wrapeper {
+  background: url(/asia-new/img/bg.png) center bottom 70px;
+}
 
 
 
@@ -41,6 +44,14 @@ body {
   margin: 0px auto;
   width: 1140px;
 }
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 a {
   color: inherit;
@@ -203,6 +214,11 @@ img {
 .button--big {
   padding: 18px 40px;
 
+}
+
+.button--grey {
+  background: #2B2B2B;
+  color: white;
 }
 
 .button--small {
@@ -822,7 +838,7 @@ p .service__description {
 }
 
 .service__text {
-  margin-bottom:75px;
+  margin-bottom: 75px;
 }
 
 
@@ -856,7 +872,7 @@ p .service__description {
   width: 225px;
   height: 125px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
 }
 
@@ -872,3 +888,272 @@ p .service__description {
 .inner-footer__container {
   padding-top: 47px;
   padding-bottom: 30px;
+}
+
+
+.hello-banner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  flex-direction: column
+}
+
+.hello-banner__text {
+  margin-bottom: 70px;
+  animation-delay: 2s;
+
+}
+
+.hello-banner {
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation: zoom 1s forwards ease-in;
+}
+
+
+@keyframes zoom {
+  from {
+    transform: scale(.7);
+  }
+
+  20% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(.9);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+/*
+
+.animate__animated .animate__bouncein {
+  --animation-duration: 2s;
+
+  animate__animated animate__bounceIn 
+  
+} */
+
+
+.reviews {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.review {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #F4F5F5;
+}
+
+
+.reviews__item {
+  margin-bottom: 20px;
+}
+
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.review__link {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+
+  color: #2E77A4;
+
+}
+
+.review__link::after {
+  content: url(/asia-new/img/vk-blue\ 1.png);
+  height: 29px;
+}
+
+
+.review__tags {
+  display: flex;
+  align-items: flex-start;
+
+
+}
+
+
+.tag {
+  font-size: 13px;
+  color: #303030;
+  padding: 8px 10px;
+  border-radius: 50px;
+  background: #E7E7E7;
+}
+
+
+
+.tag--active {
+  background: #B9EAE4;
+}
+
+.review_title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #1A1B1E;
+  margin-bottom: 20px;
+}
+
+.review__content {
+  font-size: 16px;
+  color: #818181;
+  margin-bottom: 48, 5px;
+}
+
+.review__date {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1A1B1E;
+}
+
+
+.separator {
+  background: url(/asia-new/img/Rectangle.png) no-repeat;
+  min-height: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.separator__content {
+  width: 50%;
+  display: inline-flex;
+
+
+}
+
+.separator__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+
+}
+
+.separator__title::after {
+  content: url(/asia-new/img/couple.png);
+  left: 520px;
+  top: -90px;
+  position: absolute;
+
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 19px 30px;
+  font-size: 18px;
+  color: #1A1B1E;
+}
+
+.form__input:last-child {
+
+  margin-right: 0px;
+}
+
+
+.form::placeholder {
+  color: gray;
+}
+
+.form__input--textarea {
+  height: 235px;
+}
+
+
+.contols__elem {
+  cursor: pointer;
+}
+
+.controls__checkbox:checked~.controls__tag {
+  background: #B9EAE4;
+
+}
+
+
+.controls__checkbox {
+  display: none;
+}
+
+.form__controls {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__controls-title {
+  width: 40%;
+}
+
+.controls {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.contols__item {
+  margin-right: 14px;
+  margin-bottom: 9px;
+}
+
+.form__btn {
+  margin-right: 17px;
+}
+
+.form__btn:last-child {
+  margin-right: 0px;
+}
+
+.form__buttns {
+  display: flex;
+  justify-content: flex-end;
+}
