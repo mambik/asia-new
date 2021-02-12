@@ -982,6 +982,7 @@ p .service__description {
   height: 140px;
   overflow: hidden;
   border-radius: 50%;
+  margin-right: 22px;
 }
 
 .review__header {
@@ -998,12 +999,17 @@ p .service__description {
   font-size: 24px;
 
   color: #2E77A4;
+  margin-bottom: 5px;
+  
 
 }
 
 .review__link::after {
   content: url(/asia-new/img/vk-blue\ 1.png);
   height: 29px;
+  padding-left: 4px;
+  
+ 
 }
 
 
@@ -1018,9 +1024,15 @@ p .service__description {
 .tag {
   font-size: 13px;
   color: #303030;
-  padding: 8px 10px;
+  padding: 11px 17px;
   border-radius: 50px;
   background: #E7E7E7;
+  margin-right: 2px;
+}
+
+
+.tag:last-child {
+  margin-right: 0px;
 }
 
 
